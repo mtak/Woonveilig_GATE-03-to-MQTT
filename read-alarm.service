@@ -1,0 +1,15 @@
+[Unit]
+Description=Read alarm state
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=mtak
+ExecStart=/usr/local/bin/read_alarm.sh
+
+[Install]
+WantedBy=multi-user.target
+
