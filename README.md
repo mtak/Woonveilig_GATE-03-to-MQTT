@@ -1,3 +1,6 @@
+> [!NOTE]
+> Seems like Woonveilig have patched the firmware on the gateway in a way that the script cannot fetch the alarm status anymore. See [this issue](https://github.com/mtak/Woonveilig_GATE-02-to-MQTT/issues/1). If anyone finds that it still works, or there is a workaround, please submit a PR.
+
 # Woonveilig GATE-03-to-MQTT
 This service allows you to publish the state of your Woonveilig/Egardia GATE-03 system to MQTT. It calls the GATE-03 webpage and outputs to mqtt every 2 seconds.
 
